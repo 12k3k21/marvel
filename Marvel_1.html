@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movie</title>
+    <style>
+        html{background-color: rgba(35, 35, 223, 0.863);} /* 가장 바깥 배경색*/
+        body{
+            width: 800px;
+            padding: 0 20px 40px 20px;
+            border: 5px solid black;                      /*body 주변에 검은색 실선*/
+            margin: 0 auto;                                 /*가운데로*/
+            background-color: rgba(190, 56, 56, 0.877);   /* 배경화면 색깔*/
+        }
+        h1{
+            width: 250px;
+            height: 10px;}
+        audio{
+            float: right;
+            width: 300px;
+            height: 20px;}
+        ul{
+            overflow: hidden;}
+        li{
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            padding: 30px;                                  /*간격 띄우기*/
+            border: 50px;
+            margin: 0 auto;
+        }
+        li:first-child{border-radius: 10px 0 0 10px;}
+        li:last-child{border-radius: 0 10px 10px 0;}
+        #intro{
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        #movie{
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        #character{
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        #story_movie{
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        iframe{padding: 10px 0px 0px 0px;}
+    </style>
+</head>
+<body>
+    <h1>Marvel Movie</h1>
+    <audio src="happyrock.mp3" controls type="audio/mp3"></audio>
+    <br>
+    <hr>
+    <ul>
+        <li id="intro"><a href="#">Intro</a></li>
+        <li id="movie"><a href="#">Movie</a></li>
+        <li id="character"><a href="#">Character</a></li>
+        <li id="story_movie"><a href="#">Story Time</a></li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dE1P4zDhhqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movie</title>
+    <style>
+
+        html{background-color: rgba(193, 196, 46, 0.863);} /* 가장 바깥 배경색*/
+        
+        body{
+            width: 800px;
+            height: 4350px;
+            padding: 0 20px 40px 20px;
+            border: 2px solid black;                      /*body 주변에 검은색 실선*/
+            margin: 0 auto;                                 /*가운데로*/
+            background-color: rgb(197, 31, 31);   /* 배경화면 색깔*/
+        }
+        
+        
+        h1{
+            width: 250px;
+            height: 10px;}
+        
+        
+        audio{
+            float: right;
+            width: 300px;
+            height: 20px;}
+        
+        li{
+            text-align: center;
+        }
+        
+        ul{
+            overflow: hidden;}
+
+        #ulo{
+            margin-left: 150px;
+        }
+
+        .lio{
+            background-color: rgba(116, 186, 233, 0.863);
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            padding: 30px;                                  /*간격 띄우기*/
+            border: 50px;
+            margin: 0 auto;
+        }
+        
+        
+        .lio{
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        .lio:first-child{border-radius: 10px 0 0 10px;}
+        .lio:last-child{border-radius: 0 10px 10px 0;}
+        
+
+        #ult{
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            padding: 30px;                                  /*간격 띄우기*/
+            border: 50px;
+            margin: 0 auto;
+        }
+        #left_chapter{
+            height: auto;
+            position: sticky;                               /* 움직이는 사이드 메뉴 */
+            top: 0;
+        }
+        
+        .lit{
+            background-color: rgb(199, 194, 194);
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        .lit:first-child{border-radius: 10px 10px 0 0px;}
+        .lit:last-child{border-radius: 0 0px 10px 10px;}
+
+        a:link { text-decoration: none;               /*a 태그 밑줄 없애기 */
+                color: black;
+        }
+        a:visited { color: #000000; }
+        
+        iframe{
+            margin-left: 160px;
+        }
+
+        .title{
+            margin-left: 160px;
+            width: 100px;
+            height: auto;
+            color: rgb(255, 255, 255);            
+        }
+
+        #cha{
+            text-align: center;
+        }
+        
+        .factor{
+            float: left;
+            margin-left: 160px;
+        }
+
+        .actor{
+            float: left;
+            margin-left: 5%;
+        }
+
+        .c{                             /* 설명창 금테두리 */
+            border: 2px solid gold;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .d{
+            border: 2px solid gold;
+            border-radius: 15px;
+            height: 126.5px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .image{                 /* 포스터 검은 테두리 */
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        hr{
+            border:0;
+            margin:0;
+            width:100%;
+            height:2px;
+            background:black;
+        }
+        
+        .brm{
+            width: 670px;
+            margin-left: 150px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Marvel Movie</h1>
+    <audio src="happyrock.mp3" controls type="audio/mp3"></audio>
+    <br>
+    <hr>
+    
+    <ul id="ulo">
+        <div class="lio"><a href="../M_Intro.html"><li >Intro</li></a></div>
+        <div class="lio"><a href="../M_Movie_Time.html"><li >Movie</li></a></div>
+        <div class="lio"><a href="../M_Character.html"><li >Character</li></a></div>
+        <div class="lio"><a href="../M_Story_Time.html"><li >Story Time</li></a></div>
+    </ul>
+
+    <div id="left_chapter">
+        <ul id="ult">
+            <div class="lit"><a href="#"><li>Poster</li></a></div>
+            <div class="lit"><a href="#trailer"><li>Trailer</li></a></div>
+            <div class="lit"><a href="#character"><li>Character</li></a></div>
+        </ul>
+    </div>
+
+    <div class="title">
+        <h2 >포스터</h2>
+    </div>
+
+    <img class="image" src="../poster/avengers4.jpg" alt="poster"
+    width="300px"
+    height="450px">
+
+    <hr id="trailer" class="brm">
+
+    <div class="title">
+        <h2 >트레일러</h2>
+    </div>
+
+    <iframe class="image" width="560" height="315" src="https://www.youtube.com/embed/Ko2NWhXI9e8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <hr id="character" class="brm">
+    
+    <div class="title">
+        <h2 >등장인물 (주연)</h2>
+    </div>
+
+    <div id="cha">
+        <a href="#.html">
+            <div class="factor" >
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F37%2F201504171519202401.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>로버트 다우니 주니어</h5>
+                    <hr>
+                    <h5>토니 스타크 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F110%2F201806211509351671.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                    <div class="d">
+                        <h4>크리스 에반스</h4>
+                        <hr>
+                        <h5>스티브 로저스,<br>캡틴 아메리카 역</h5>
+                    </div>
+                </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000001485%2FPM148568_110408_000.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="c">
+                    <h4>크리스 햄스워스</h4>
+                    <hr>
+                    <h5>토르 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F149%2F201407241837584341.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                    <div class="c">
+                        <h5>마크 러팔로</h5>
+                        <hr>
+                        <h5>브루스 배너,<br>헐크 역</h5>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#.html">
+                <div class="factor">
+                    <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F197%2F201403041029481811.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="d">
+                    <h4>스칼릿 조핸슨</h4>
+                    <hr>
+                    <h5>나타샤 로마노프,<br>블랙 위도우 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000114%2FPM11421_163509_000.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="d">
+                    <h5>제레미 레너</h5>
+                    <hr>
+                    <h5>클린트 바튼,<br>호크 아이 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor" >
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F131%2F201806281341206061.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>폴 러드</h5>
+                    <hr>
+                    <h5>스캇 랭<br>앤트맨 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F23%2F201701171528392781.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h4>돈 치들</h4>
+                    <hr>
+                    <h5>워머신,<br>제임스 로드 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="factor" >
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F176%2F201601141213451611.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h4>브리 라슨</h4>
+                    <hr>
+                    <h5>캐럴 댄버스, 비어스,<br>캡틴 마블 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F193%2F201912041741554321.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="d">
+                    <h5>카렌 길런</h5>
+                    <hr>
+                    <h5>네뷸라 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F84%2F201702011739111061.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>브래들리 쿠퍼</h5>
+                    <hr>
+                    <h5>로켓 목소리 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F79%2F201509111838166751.gif&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="c">
+                    <h4>조슈 브롤린</h4>
+                    <hr>
+                    <h5>타노스 역</h5>
+                </div>
+            </div>
+        </a>
+
+            <hr class="brm">
+
+            <div class="title">
+                <h2>등장인물 (조연)</h2>
+            </div>
+        </div>
+                
+        <a href="#.html">
+            <div class="factor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F44%2F202104191650506431.png&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>베네딕트 컴버배치</h5>
+                    <hr>
+                    <h5>닥터 스트레인지 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F147%2F201910021416188201.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                    <div class="c">
+                        <h5>조 샐다나</h5>
+                        <hr>
+                        <h5>가모라 역</h5>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#.html">
+                <div class="actor">
+                    <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F124%2F201712061512278391.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                    <div class="d">
+                        <h5>크리스 프랫</h5>
+                        <hr>
+                        <h5>스타로드,<br>피너 제이슨 퀼 역</h5>
+                    </div>
+                </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F96%2F202010220933249971.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>채드윅 보스만</h5>
+                    <hr>
+                    <h5>티 찰라,<br>블랙팬서 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="factor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F56%2F201707111351018231.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="d">
+                    <h5>톰 홀랜드</h5>
+                    <hr>
+                    <h5>피터파커,<br>스파이더맨 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000222%2FPM22270_151148_000.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="d">
+                    <h5>안소니 마키</h5>
+                    <hr>
+                    <h5>샘 월슨<br>팔콘 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F99%2F201701061722081411.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="d">
+                    <h4>기네스 팰트로</h4>
+                    <hr>
+                    <h5>버지니아 펩퍼 포츠 역</h5>
+                </div>
+            </div>
+        </a>
+        
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000901%2FPM90191_173218_000.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>테사 톰슨</h5>
+                    <hr>
+                    <h5>발키리 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="factor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F124%2F201803151542453801.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                    <div class="d">
+                        <h5>세바스찬 스탠</h5>
+                        <hr>
+                        <h5>버키 반즈,<br>윈터 솔져 역</h5>
+                    </div>
+                </div>
+            </a>
+
+        <a href="#.html">
+                <div class="actor">
+                    <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F72%2F201806181558451161.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                        <div class="d">
+                            <h5>다나이 쿠리라</h5>
+                            <hr>
+                            <h5>오코예 역</h5>
+                        </div>
+                    </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F44%2F201410291104301701.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="d">
+                    <h4>톰 히들스턴</h4>
+                    <hr>
+                    <h5>로키 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F34%2F201802281558121761.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="d">
+                    <h5>엘리자베스 올슨</h5>
+                    <hr>
+                    <h5>완다 막시모프 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="factor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000520%2FPM52031_182830_000.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="d">
+                    <h5>에반젤린 릴리</h5>
+                    <hr>
+                    <h5>호프 반 다인,<br>와스프 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F10%2F202010271646093791.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>틸다 스윈튼</h5>
+                    <hr>
+                    <h5>에신션트 원 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="../acter\first_avenger\4.jpg" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>헤일리 앳웰</h5>
+                    <hr>
+                    <h5>페기 카터 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000061%2F00000006186-t.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>존 슬래터리</h5>
+                    <hr>
+                    <h5>하워드 스타크 역</h5>
+                </div>
+            </div>
+        </a>
+        
+        <a href="#.html">
+            <div class="factor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F47%2F201805281545163051.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                    <div class="d">
+                        <h5>데이브 바티스타</h5>
+                        <hr>
+                        <h5>드랙스,<br>아서 더글라스 역</h5>
+                    </div>
+                </div>
+            </a>
+
+        
+            <a href="#.html">
+                <div class="actor">
+                    <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000035%2F00000003518-t.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                    <div class="c">
+                        <h5>반 디젤</h5>
+                        <hr>
+                        <h5>그루트 목소리 역</h5>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="#.html">
+                <div class="actor">
+                    <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F88%2F20180413165550821.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                    <div class="c">
+                        <h5>폼 클레멘티에프</h5>
+                        <hr>
+                        <h5>멘티스 역</h5>
+                    </div>
+                </div>
+            </a>
+    
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F191%2F201806081720482071.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>레티티아 라이트</h5>
+                    <hr>
+                    <h5>슈리 역</h5>
+                </div>
+            </div>
+        </a>
+        
+        <a href="#.html">
+            <div class="factor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F46%2F201904041834125651.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>테리 노터리</h5>
+                    <hr>
+                    <h5>그루트 역</h5>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F138%2F201611241406565231.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>데네딕 웡</h5>
+                    <hr>
+                    <h5>웡 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F62%2F201412291803423541.jpg&type=u111_139&quality=95" alt="first avenger" width="120px" height="160px"> 
+                <div class="c">
+                    <h5>존 파브로</h5>
+                    <hr>
+                    <h5>호건 역</h5>
+                </div>
+            </div>
+        </a>
+
+        <a href="#.html">
+            <div class="actor">
+                <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000014%2FPM1408_190406_000.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                    <div class="c">
+                        <h5>사무엘 L. 잭슨</h5>
+                        <hr>
+                        <h5>닉 퓨리 역</h5>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#.html">
+                <div class="factor">
+                    <img class="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgmovie.naver.net%2Fmdi%2Fpi%2F000000010%2FPM1068_171714_000.jpg&type=u111_139&quality=95" alt="" width="120px" height="160px"> 
+                    <div class="c">
+                        <h5>마이클 더글라스</h5>
+                        <hr>
+                        <h5>헹크 핌 박사 역</h5>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    
+</body>
+</html>
+

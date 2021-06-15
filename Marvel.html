@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movie</title>
+    <style>
+        h1{width: 250px;
+        height: 10px;}
+        audio{float: right;}
+        ul{overflow: hidden;}
+        li{
+            list-style: none;       /*리스트 앞에 *제거 */
+                      /*오른쪽으로 붙이기*/ 
+            padding: 30px;          /*간격 띄우기*/
+            
+        }
+        li:hover{color: white;}
+        li:active{color: green;}
+        #intro{width: 15px;
+               height: 15px; 
+               float: left;
+               background-color: red;}
+        #movie{width: 15px;
+               height: 15px; 
+               float: left;
+               background-color: blue;}
+        #char{width: 15px;
+               height: 15px; 
+               float: left;
+               background-color: red;}
+        #story{width: 15px;
+               height: 15px; 
+               float: left;
+               background-color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Marvel Movie</h1>
+    <audio src="happyrock.mp3" controls type="audio/mp3"></audio>
+    <ul>
+        <li id="intro"><a href="#">Intro</a></li>
+        <li id="movie"><a href="#">Movie</a></li>
+        <li id="char"><a href="#">Character</a></li>
+        <li id="story"><a href="#">Story Time</a></li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dE1P4zDhhqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

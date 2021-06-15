@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movie</title>
+    <style>
+
+        html{background-color: rgba(193, 196, 46, 0.863);} /* 가장 바깥 배경색*/
+        
+        body{
+            width: 800px;
+            height: 2200px;
+            padding: 0 20px 40px 20px;
+            border: 2px solid black;                      /*body 주변에 검은색 실선*/
+            margin: 0 auto;                                 /*가운데로*/
+            background-color: rgb(197, 31, 31);   /* 배경화면 색깔*/
+        }
+        
+        
+        h1{
+            width: 250px;
+            height: 10px;}
+        
+        
+        audio{
+            float: right;
+            width: 300px;
+            height: 20px;}
+        
+        li{
+            text-align: center;
+        }
+        
+        ul{
+            overflow: hidden;}
+
+        #ulo{
+            margin-left: 150px;
+        }
+
+        .lio{
+            background-color: rgba(116, 186, 233, 0.863);
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            margin: 0 auto;  
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+        }
+        .lio:first-child{border-radius: 10px 0 0 10px;}
+        .lio:last-child{border-radius: 0 10px 10px 0;}
+        
+
+        #ult{
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            padding: 30px;                                  /*간격 띄우기*/
+            border: 50px;
+            margin: 0 auto;
+        }
+        #left_chapter{
+            height: auto;
+            position: sticky;                               /* 움직이는 사이드 메뉴 */
+            top: 0;
+        }
+        
+        .lit{
+            background-color: rgb(199, 194, 194);
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        .lit:first-child{border-radius: 10px 10px 0 0px;}
+        .lit:last-child{border-radius: 0 0px 10px 10px;}
+
+        a:link { text-decoration: none;               /*a 태그 밑줄 없애기 */
+                color: black;
+        }
+        a:visited { color: #000000; }
+        #movie{
+                text-align: left;
+
+        }
+
+        .fposter{
+            float: left;    width: 130px;
+            height: 250px; 
+
+        }
+
+        .poster{
+            float: left;
+            margin-left: 3%;
+            width: 130px;
+            height: 250px;             
+        }
+
+        .lposter{
+            float: left;
+            margin-left: 160px;
+            width: 130px;
+            height: 250px;         
+        }
+        
+        h4{
+            text-align: center;
+        }
+        
+        .title{
+            color: aliceblue;
+            width: auto;
+            height: auto;
+        }
+
+        .next{                          /*다음 화살표*/
+            float: left;
+            margin-top: 30px;
+            margin-left: 3%;
+        }
+        
+        .lnext{
+            float: left;
+            margin-top: 30px;
+            margin-left: 130px;       
+        }
+
+        .image{                 /* 포스터 검은 테두리 */
+            border: 1px solid rgb(0, 0, 0);
+        }
+        </style>
+</head>
+<body>
+    <h1>Marvel Movie</h1>
+    <audio src="happyrock.mp3" controls type="audio/mp3"></audio>
+    <br>
+    <hr>
+    
+    <ul id="ulo">
+        <li class="lio"><a href="M_Intro.html">Intro</a></li>
+        <li class="lio"><a href="M_Movie_Time.html">Movie</a></li>
+        <li class="lio"><a href="M_Character.html">Character</a></li>
+        <li class="lio"><a href="M_Story_Time.html">Story Time</a></li>
+    </ul>
+    
+    <div id="left_chapter">
+        <ul id="ult">
+            <li class="lit"><a href="#"></a></li>
+            <li class="lit"><a href="#"></a></li>
+            <li class="lit"><a href="#"></a></li>
+        </ul>
+    </div>
+    
+    <h1 class="title">스토리 타임 순 영화 정렬</h1>
+    <div id="movie">
+        <a href="moviehtml/first_avenger.html">
+            <div class="fposter">
+                <img class="image" src="poster\first avenger.jpg" alt="first avenger" width="120px" height="160px"> 
+                <h4>캡틴 아메리카<br>퍼스트 어벤져</h4>
+            </div>
+        </a>
+
+        <div class="next">
+        <img src="next.png" alt="gogo" width="50px" height="100px">
+        </div>
+
+        <a href="moviehtml/captain_marvel.html">
+            <div class="poster">
+                <img class="image" src="poster\captain mavel.jpg" alt="captain mavel" width="120px" height="160px"> 
+                <h4>캡틴마블</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/incredible_hulk.html">
+            <div class="poster">
+                <img class="image" src="poster\increderble hulk.jpg" alt="increderble hulk" width="120px" height="160px"> 
+                <h4>인크레더블<br>헐크</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/ironman1.html">
+            <div class="poster">
+                <img class="image" src="poster\ironman1.jpg" alt="ironman1" width="120px" height="160px"> 
+                <h4>아이언맨</h4>
+            </div>
+        </a>
+        
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/ironman2.html">
+            <div class="poster">
+                <img class="image" src="poster\ironman2.jpg" alt="ironman2" width="120px" height="160px">
+                <h4>아이언맨 2</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/thor1.html">
+            <div class="poster">
+                <img class="image" src="poster\thor.jpg" alt="thor" width="120px" height="160px">
+                <h4>토르<br>천둥의신</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/avengers.html">
+            <div class="poster">
+                <img class="image" src="poster\avengers.jpg" alt="avengers" width="120px" height="160px">
+                <h4>어벤져스</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/ironman3.html">
+            <div class="poster">
+                <img class="image" src="poster\ironman3.jpg" alt="ironman3" width="120px" height="160px">
+                <h4>아이언맨 3</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/thor2.html">
+            <div class="poster">
+                <img class="image" src="poster\thor2.jpg" alt="thor2" width="120px" height="160px">
+                <h4>토르2<br>다크월드</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/winter_soldier.html">
+            <div class="poster">
+                <img class="image" src="poster\winter soldier.jpg" alt="winter soldier" width="120px" height="160px">
+                <h4>캡틴 아메리카<br>윈터솔져</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/GOG.html">
+            <div class="poster">
+                <img class="image" src="poster\GOG1.jpg" alt="GOG1" width="120px" height="160px">
+                <h4>가디언즈 오브<br>갤럭시</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/GOG2.html">
+            <div class="poster">
+                <img class="image" src="poster\GOG2.jpg" alt="GOG2" width="120px" height="160px">
+                <h4>가디언즈 오브<br>갤럭시2</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/avengers2.html">
+            <div class="poster">
+                <img class="image" src="poster\avengers2.jpg" alt="avengers2" width="120px" height="160px">
+                <h4>어벤져스2<br>에이지오브울트론</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/antman.html">
+            <div class="poster">
+                <img class="image" src="poster\ant man.jpg" alt="antman" width="120px" height="160px">
+                <h4>앤트맨</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/civil_war.html">
+            <div class="poster">
+                <img class="image" src="poster\civil war.jpg" alt="civil war" width="120px" height="160px">
+                <h4>캡틴아메리카<br>시빌워</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/spiderman.html">
+            <div class="poster">
+                <img class="image" src="poster\spiderman homecoming.jpg" alt="spiderman1" width="120px" height="160px">
+                <h4>스파이더맨<br>홈커밍</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/Dr_strange.html">
+            <div class="poster">
+                <img class="image" src="poster\Dr.strange.jpg" alt="Dr.strange" width="120px" height="160px">
+                <h4>닥터 스트레인지</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/black_panther.html">
+            <div class="poster">
+                <img class="image" src="poster\black pancer.jpg" alt="black pancer" width="120px" height="160px">
+                <h4>블랙팬서</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/antman2.html">
+            <div class="poster">
+                <img class="image" src="poster\antman 2.jpg" alt="antman2" width="120px" height="160px">
+                <h4>앤트맨2<br>앤트맨과 와스프</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/thor3.html">
+            <div class="poster">
+                <img class="image" src="poster\thor3.jpg" alt="thor3" width="120px" height="160px">
+                <h4>토르3<br>라그나로크</h4>
+        </div>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/avengers3.html">
+            <div class="poster">
+                <img class="image" src="poster\avengers3.jpg" alt="avengers3" width="120px" height="160px">
+                <h4>어벤져스3<br>인피니티워</h4>
+            </div>
+        </a>
+
+        <div class="lnext">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/avengers4.html">
+            <div class="poster">
+                <img class="image" src="poster\avengers4.jpg" alt="avengers4" width="120px" height="160px">
+                <h4>어벤져스4<br>엔드게임</h4>
+            </div>
+        </a>
+
+        <div class="next">
+            <img src="next.png" alt="gogo" width="50px" height="100px">
+            </div>
+
+        <a href="moviehtml/spiderman2.html">
+            <div class="poster">
+                <img class="image" src="poster\spiderman farfromhome.jpg" alt="spiderman2" width="120px" height="160px">
+                <h4>스파이더맨2<br>파 프롬 홈</h4>
+            </div>
+        </a>
+
+    </div>
+</body>
+</html>
+

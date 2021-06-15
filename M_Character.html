@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movie</title>
+    <style>
+
+        html{background-color: rgba(193, 196, 46, 0.863);} /* 가장 바깥 배경색*/
+        
+        body{
+            width: 800px;
+            height: 1800px;
+            padding: 0 20px 40px 20px;
+            border: 2px solid black;                      /*body 주변에 검은색 실선*/
+            margin: 0 auto;                                 /*가운데로*/
+            background-color: rgb(197, 31, 31);   /* 배경화면 색깔*/
+        }
+        
+        
+        h1{
+            width: 250px;
+            height: 10px;}
+        
+        
+        audio{
+            float: right;
+            width: 300px;
+            height: 20px;}
+        
+        li{
+            text-align: center;
+        }
+        
+        ul{
+            overflow: hidden;}
+
+        #ulo{
+            margin-left: 150px;
+        }
+
+        .lio{
+            background-color: rgba(116, 186, 233, 0.863);
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            margin: 0 auto;  
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+        }
+        .lio:first-child{border-radius: 10px 0 0 10px;}
+        .lio:last-child{border-radius: 0 10px 10px 0;}
+        
+
+        #ult{
+            width: 100px;
+            list-style: none;
+            float: left;                                    /*왼쪽으로 붙이기*/ 
+            padding: 30px;                                  /*간격 띄우기*/
+            border: 50px;
+            margin: 0 auto;
+        }
+        #left_chapter{
+            height: auto;
+            position: sticky;                               /* 움직이는 사이드 메뉴 */
+            top: 0;
+        }
+        
+        .lit{
+            background-color: rgb(199, 194, 194);
+            width: 100;
+            padding: 15px 15px 15px 15px;
+            border: 3px solid ;
+            margin: 0;
+        }
+        .lit:first-child{border-radius: 10px 10px 0 0px;}
+        .lit:last-child{border-radius: 0 0px 10px 10px;}
+
+        a:link { text-decoration: none;               /*a 태그 밑줄 없애기 */
+                color: black;
+        }
+        a:visited { color: #000000; }
+        #movie{
+                text-align: left;
+
+        }
+
+        .fposter{
+            float: left;    width: 130px;
+            height: 250px; 
+
+        }
+
+        .poster{
+            float: left;
+            margin-left: 3%;
+            width: 130px;
+            height: 250px;             
+        }
+
+        .lposter{
+            float: left;
+            margin-left: 160px;
+            width: 130px;
+            height: 250px;         
+        }
+        
+        h4,h5{
+            text-align: center;
+        }
+        
+        .title{
+            color: aliceblue;
+            width: auto;
+            height: auto;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>Marvel Movie</h1>
+    <audio src="happyrock.mp3" controls type="audio/mp3"></audio>
+    <br>
+    <hr>
+    
+    <ul id="ulo">
+        <li class="lio"><a href="M_Intro.html">Intro</a></li>
+        <li class="lio"><a href="M_Movie_Time.html">Movie</a></li>
+        <li class="lio"><a href="M_Character.html">Character</a></li>
+        <li class="lio"><a href="M_Story_Time.html">Story Time</a></li>
+    </ul>
+    
+    <div id="left_chapter">
+        <ul id="ult">
+            <li class="lit"><a href="#">man</a></li>
+            <li class="lit"><a href="#woman">woman</a></li>
+            <li class="lit"><a href="#nhuman">Not human</a></li>
+        </ul>
+    </div>
+    
+    <h1 class="title">대표 등장인물</h1>
+    <div id="movie">
+        <a href="#">
+            <div class="fposter">
+                <img src="character/man/1.jpg" id="ironman" alt="ironman1" width="120px" height="160px"> 
+                <h5>아이언맨<br>토니 스타크</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/2.jpg" alt="captain america" width="120px" height="160px"> 
+                <h5>캡틴 아메리카<br>스티브 로저스</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/3.jpg" alt="thor" width="120px" height="160px">
+                <h5>토르<br>토르 오딘손</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/5.jpg" alt="htlk" width="120px" height="160px">
+                <h5>헐크<br>브루스 배너</h5>
+            </div>
+        </a>
+        
+
+        <a href="#">
+            <div class="lposter">
+                <img src="character/man/4.jpg" alt="spiderman" width="120px" height="160px">
+                <h5>스파이더맨<br>피터 파커</h5>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/6.jpg" alt="warmachine" width="120px" height="160px">
+                <h5>워 머신<br>제임스 루퍼트 로드</h5>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/10.jpg" alt="hawkeye" width="120px" height="160px">
+                <h5>호크아이<br>클린트 바튼</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/12.jpg" alt="black panther" width="120px" height="160px">
+                <h5>블랙팬서<br>트찰라</h5>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="lposter">
+                <img src="character/man/13.jpg" id="antman" alt="winter soldier" width="120px" height="160px">
+                <h5>앤트맨<br>스콧 에드워드<br>해리스 랭</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/14.jpg" alt="wintersoilder" width="120px" height="160px">
+                <h5>윈터솔져<br>버키 반즈</h5>
+            </div>
+        </a>
+
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/man/15.jpg" alt="avengers2" width="120px" height="160px">
+                <h5>퀵실버<br>피에트로 막시모프</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="https://search.pstatic.net/common/?src=https%3A%2F%2Fssl.pstatic.net%2Fsstatic%2Fpeople%2F18%2F201811131208145971.jpg&type=u111_139&quality=95" alt="avengers2" width="120px" height="160px">
+                <h5>스탠리</h5>
+            </div>
+        </a>
+        
+
+        <a href="#">
+            <div class="lposter">
+                <img src="character/woman/1.jpg" alt="antman" width="120px" height="160px">
+                <h5 id="woman">블랙위도우<br>나타샤 로마노프</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/woman/4.jpg" alt="civil war" width="120px" height="160px">
+                <h5>캡틴 마블<br>캐럴 댄버스</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/woman/5.jpg" alt="Dr.strange" width="120px" height="160px">
+                <h5>페퍼 포츠</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/woman/19.jpg" alt="GOG2" width="120px" height="160px">
+                <h5>가모라</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="lposter">
+                <img src="character/woman/21.jpg" alt="spiderman1" width="120px" height="160px">
+                <h5>네뷸라</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/woman/20.jpg" alt="thor3" width="120px" height="160px">
+                <h5>멘티스</h5>
+        </div>
+
+        <a href="#">
+            <div class="poster">
+                <img src="https://w.namu.la/s/752b61d91611a09dae520c8ad6acea949e7db1d3b1ab93a0f2143c30e1175d23e91b44c4baa3eb09fc286e981913f474562c2bb560913096a078ac574447a80d00f99afe8e33ae9ed5389241cded6262e11b533fe9dcff58f82cc6090bfd0088f0dd38729a99f6b585a521cb9a6d11af" alt="black pancer" width="120px" height="160px">
+                <h5>슈리</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/nhuman/1.jpg" alt="avengers3" width="120px" height="160px">
+                <h5 id="nhuman">비전</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="lposter">
+                <img src="character/nhuman/5.jpg" alt="antman2" width="120px" height="160px">
+                <h5>로켓</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/nhuman/6.jpg" alt="captain mavel" width="120px" height="160px"> 
+                <h5>그루트</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/nhuman/2.jpg" alt="avengers4" width="120px" height="160px">
+                <h5>쟈비스</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="poster">
+                <img src="character/nhuman/3.jpg" id="spiderman" alt="spiderman2" width="120px" height="160px">
+                <h5>프라이데이</h5>
+            </div>
+        </a>
+
+    </div>
+</body>
+</html>
+
